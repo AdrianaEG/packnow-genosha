@@ -150,7 +150,7 @@ main .calcular-envio{
 }
 
 main .calcular-envio .logo{
-    padding: 1.5rem;
+    padding: 1.5rem 3rem;/*3rem*/
 }
 
 main .calcular-envio .body-card{
@@ -191,10 +191,90 @@ main .calcular-envio .body-card .description button{
     width: 85%;
     padding: 5%;
     border-radius: 0.9rem;
+    border: none;
 }
 
 main .calcular-envio .body-card .description button a{
     color: var(--white-color);
     font-weight: bold;
     font-size: 0.8rem;
+}
+
+main .container-services{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+main .container-services h3{
+    color: var(--orange-color);
+    font-size: 1.5rem !important;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+main .container-services span{
+    text-align: center;
+    font-size: 0.625rem;
+    color: var(--grey-p-color);
+    margin-bottom: 1.5rem;
+}
+
+main .container-services .card.service{
+    display: flex;
+    /* height: 800px; */
+    justify-content: flex-end;
+    height: 24rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+
+main .container-services .card.service.left{
+    background: url(../img/img-right.png);
+    background-position-x: 40% !important;
+}
+main .container-services .card.service.right{
+    background: url(../img/img-left.png);
+}
+
+main .container-services .card.service .title-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 117, 34, 0.8);
+    padding: 1.5rem;
+}
+
+main .container-services .card.service .title-description h4{
+    font-size: 1.125rem !important;
+    font-weight: bold !important;
+    color: var(--white-color);
+    text-align:center;
+}
+
+main .container-services .card.service .title-description .description-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container-services .card.service .title-description .description-button span{
+    font-size: 0.625rem;
+    color: var(--white-color);
+    font-weight: lighter;
+    text-align: center;
+    margin: 0;
+}
+
+main .container-services .card.service .title-description .description-button button{
+    border: none;
+    background: none;
+    margin-left: 0.5rem;
+}
+
+main .container-services .card.service .title-description .description-button button a{
+    color: var(--white-color);
 }
