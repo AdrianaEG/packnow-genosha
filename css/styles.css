@@ -337,8 +337,37 @@ main .container-services .card.service .title-description .description-button bu
         font-size: 0.875rem;
         width: 40vw;
     }
-
+    
     main{
         top: 35rem;
     }
+
+    main .calcular-envio{
+        width: 95% !important;
+    }
+
+    main .calcular-envio .logo{
+        display: inline-flex;
+        float: left;
+        width: 50%;
+        margin-top: 3rem;
+    }
+
+    main .calcular-envio .body-card{
+        display: inline;
+    }
+
+    main .calcular-envio .body-card img{
+        width: 50%;
+        float: right;
+    }
+
+    main .calcular-envio .body-card .description{
+        padding: 0 3rem;
+    }
+
+    main .calcular-envio .body-card .description span, main .calcular-envio .body-card .description button a{
+        font-size: 0.875rem;
+    }
+
 }
