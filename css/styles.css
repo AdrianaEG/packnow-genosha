@@ -42,10 +42,13 @@ a{
     align-items: center;
 }
 
+.menu-desktop{
+    display: none !important;
+}
+
 .menu-desplegable a{
     text-decoration: none;
     color: var(--grey-p-color);
-    font-weight: bold;
     margin: 0.5rem;
 }
 
@@ -227,7 +230,7 @@ main .container-services .card.service{
     /* height: 800px; */
     justify-content: flex-end;
     height: 24rem;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     background-size: cover;
     border: none;
 }
@@ -277,4 +280,65 @@ main .container-services .card.service .title-description .description-button bu
 
 main .container-services .card.service .title-description .description-button button a{
     color: var(--white-color);
+}
+
+
+@media(min-width: 530px){
+    .services .card.service{
+        width: 50%;
+        margin: 0.5rem auto;
+    }
+}
+
+@media(min-width: 1024px){
+    .menu-fondo{
+        display: none !important;
+    }
+
+    .menu-desktop{
+        display: flex !important;
+        margin: 0;
+        padding: 1rem 1.5rem 1rem 1rem;
+        background: rgba(255,255,255,0.9);
+    }
+
+    .menu-desktop a{
+        color: var(--black-color);
+        margin: 0 1rem;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.125rem;
+    }
+
+    .slide-principal{
+        height: 35rem;
+    }
+
+    .slide-principal .container-search{
+        width: 60vw !important;
+    }
+
+    .slide-principal .container-search .input-search{
+        font-size: 0.875rem!important;
+    }
+
+    .slide-principal .container-search .btn-search i{
+        font-size: 1.5rem;
+    }
+
+    .slide-principal .container-search .input-search, .slide-principal .container-search .btn-search{
+        background: rgba(255,255,255,0.9) !important;
+    }
+
+    .title{
+       font-size: 2.813rem !important;
+    }
+
+    .container-btn{
+        font-size: 0.875rem;
+        width: 40vw;
+    }
+
+    main{
+        top: 35rem;
+    }
 }
