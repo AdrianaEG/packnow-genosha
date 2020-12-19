@@ -143,7 +143,6 @@ a:hover, a:focus{
 }
 
 .container-btn button img{
-    /*width: 70%;*/
     margin-bottom: 0.5rem;
 }
 
@@ -246,12 +245,12 @@ main .container-services span{
 
 main .container-services .card.service{
     display: flex;
-    /* height: 800px; */
     justify-content: flex-end;
     height: 24rem;
     background-repeat: no-repeat !important;
     background-size: cover;
     border: none;
+    margin-bottom: 1rem;
 }
 
 main .container-services .card.service.left{
@@ -268,6 +267,11 @@ main .container-services .card.service .title-description{
     align-items: center;
     background: rgba(255, 117, 34, 0.8);
     padding: 1.5rem;
+}
+
+main .container-services .card.service .title-description:hover{
+    background: var(--orange-color);
+    cursor: pointer;
 }
 
 main .container-services .card.service .title-description h4{
