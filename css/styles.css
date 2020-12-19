@@ -20,7 +20,17 @@ body{
 }
 
 a{
-    text-decoration: none!important;
+    text-decoration: none !important;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+a:hover, a:focus{
+    background-size: 100% 2px;
+    color: var(--orange-color) !important;
 }
 
 .btn-menu{
@@ -126,6 +136,10 @@ a{
     font-weight: bold;
     -webkit-box-shadow: 6px 6px 10px -5px #000000;
     box-shadow: 6px 6px 10px -5px #000000;
+}
+
+.container-btn button:hover, .container-btn button:focus{
+    background: var(--black-color);
 }
 
 .container-btn button img{
