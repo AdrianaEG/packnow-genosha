@@ -14,7 +14,9 @@
     --grey-p-color: #2b2e35;
 }
 
-
+a{
+    text-decoration: none!important;
+}
 
 .btn-menu{
     border: none;
@@ -129,4 +131,70 @@
 
 .container-btn button.right{
     margin-left: 0.5rem;
+}
+
+main{
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    top: 25rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .calcular-envio{
+    width: 100% !important;
+    background: var(--yellow-color);
+}
+
+main .calcular-envio .logo{
+    padding: 1.5rem;
+}
+
+main .calcular-envio .body-card{
+    padding: 0;
+}
+
+main .calcular-envio .body-card img{
+    width: 100%;
+}
+
+main .calcular-envio .body-card .description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+main .calcular-envio .body-card .description h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--grey-p-color);
+}
+
+main .calcular-envio .body-card .description span{
+    font-size: 0.688rem;
+    text-align: center;
+    margin: 1.5rem 0;
+    color: var(--grey-p-color);
+}
+
+.bold{
+    font-weight: bold;
+}
+
+main .calcular-envio .body-card .description button{
+    background: var(--grey-p-color);
+    width: 85%;
+    padding: 5%;
+    border-radius: 0.9rem;
+}
+
+main .calcular-envio .body-card .description button a{
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 0.8rem;
 }
