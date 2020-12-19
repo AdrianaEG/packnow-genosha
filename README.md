@@ -1,6 +1,6 @@
 ### Ejercicio maquetado
 
-- Módulos implementados:
+- Módulos:
     - Slide principal
     - Calculá tu envío
     - Servicios Packnow
