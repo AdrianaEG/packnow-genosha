@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
 
-*{
-    box-sizing: border-box;
-    
-}
-
 :root{
     --orange-color: #ff7522;
     --white-color: #ffffff;
@@ -12,6 +7,16 @@
     --grey-s-color: #64666c;
     --yellow-color: #fff45f;
     --grey-p-color: #2b2e35;
+}
+
+*{
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    overflow-x: hidden;
 }
 
 a{
@@ -291,6 +296,7 @@ main .container-services .card.service .title-description .description-button bu
 }
 
 @media(min-width: 1024px){
+    
     .menu-fondo{
         display: none !important;
     }
@@ -370,4 +376,67 @@ main .container-services .card.service .title-description .description-button bu
         font-size: 0.875rem;
     }
 
+    main .container-services{
+        width: 95%;
+    }
+
+    main .container-services .services{
+        display: flex;
+    }
+
+    main .container-services h3{
+        font-size: 2.813rem !important;
+    }
+
+    main .container-services span{
+        font-size: 0.875rem;
+    }
+
+    main .container-services .services .card.service{
+        width: 50% !important;
+        background-size: cover !important;
+    }
+
+    main .container-services .services .card.service.left{
+        margin-right: 0.5rem;
+    }
+
+    main .container-services .services .card.service.right{
+        margin-left: 0.5rem;
+    }
+
+    main .container-services .card.service .title-description h4{
+        font-size: 1.3rem !important;
+    }
+
+    main .container-services .card.service .title-description .description-button span{
+        font-size: 0.75rem;
+    }
+
+}
+
+@media(min-width:1440px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-desktop{
+        width: 1440px;
+    }
+
+    .slide-principal{
+        max-width: 1440px !important;
+        margin: 0 auto !important;
+    }
+
+   .slide-principal .container-search{
+        width: 40vw !important;
+    }
+
+    main{
+        max-width: 1440px;
+    }
 }
